@@ -1,4 +1,4 @@
-package thread01.sync006;
+package thread01.deadlock;
 
 /**
  * Created with IntelliJ IDEA.
