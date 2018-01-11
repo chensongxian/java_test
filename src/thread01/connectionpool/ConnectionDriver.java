@@ -1,4 +1,4 @@
-package thread01.ConnectionPool;
+package thread01.connectionpool;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
