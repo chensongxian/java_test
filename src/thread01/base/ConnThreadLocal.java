@@ -1,9 +1,9 @@
-package thread01.conn010;
+package thread01.base;
 
 /**
  * Created with IntelliJ IDEA.
  *
- * @Description: TODO
+ * @Description: ThreadLocal使用
  * @Author: csx
  * @Date: 2018-01-07
  */

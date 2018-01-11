@@ -1,4 +1,4 @@
-package thread01.sync007;
+package thread01.atomic;
 
 import java.util.ArrayList;
 import java.util.List;
