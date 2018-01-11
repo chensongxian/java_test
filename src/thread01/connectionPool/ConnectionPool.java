@@ -1,4 +1,4 @@
-package thread01.connectionpool;
+package thread01.connectionPool;
 
 import java.sql.Connection;
 import java.util.LinkedList;
