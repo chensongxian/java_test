@@ -1,6 +1,7 @@
-package thread01.aqs;
+package thread01.lock;
 
 import org.junit.Test;
+import thread01.lock.TwinsLock;
 
 import java.util.concurrent.locks.Lock;
 
