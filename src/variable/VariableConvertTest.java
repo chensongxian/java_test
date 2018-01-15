@@ -6,10 +6,10 @@ import org.junit.Test;
  * Created with IntelliJ IDEA.
  *
  * @Description: 变量转换
- * @Author: csx
- * @Date: 2018-01-02
+ * @author: csx
+ * @Date: 2018/01/02
  */
-public class VariableConvert {
+public class VariableConvertTest {
     /**
      * 自动类型转换
      */

@@ -1,6 +1,4 @@
-package thread01.threadPool;
-
-import sun.dc.pr.PRError;
+package thread01.threadPool.custom;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package thread01.threadPool;
+package thread01.threadPool.custom;
 
 /**
  * Created with IntelliJ IDEA.
