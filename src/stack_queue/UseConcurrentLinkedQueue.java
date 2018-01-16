@@ -13,7 +13,7 @@ import java.util.concurrent.Executors;
  * @Author: csx
  * @Date: 2018/01/16
  */
-public class UserConcurrentLinkedQueue {
+public class UseConcurrentLinkedQueue {
     public static void main(String[] args) {
         final ConcurrentLinkedQueue<Integer> queue=new ConcurrentLinkedQueue<>();
 

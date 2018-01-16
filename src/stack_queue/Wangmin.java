@@ -1,4 +1,4 @@
-package thread01.queue;
+package stack_queue;
 
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
@@ -13,7 +13,7 @@ public class Wangmin implements Delayed {
     //定义时间工具类
     private TimeUnit timeUnit = TimeUnit.SECONDS;
       
-    public Wangmin(String name,String id,long endTime){  
+    public Wangmin(String name, String id, long endTime){
         this.name=name;  
         this.id=id;  
         this.endTime = endTime;  
@@ -41,10 +41,10 @@ public class Wangmin implements Delayed {
      */  
     @Override  
     public int compareTo(Delayed delayed) {  
-    	Wangmin w = (Wangmin)delayed;  
+    	Wangmin w = (Wangmin)delayed;
         return this.getDelay(this.timeUnit) - w.getDelay(this.timeUnit) > 0 ? 1:0;  
     }  
-
+    
     
     
 }  

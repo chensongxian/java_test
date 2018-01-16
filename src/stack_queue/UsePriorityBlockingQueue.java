@@ -3,7 +3,18 @@ package stack_queue;
 import thread01.queue.*;
 
 import java.util.concurrent.PriorityBlockingQueue;
-
+/**
+ * Created with IntelliJ IDEA.
+ *
+ * @Description:
+ * PriorityBlockingQueue
+ * 特点:
+ * 内部是一个二叉堆的结构，可以是大顶堆或者小顶堆
+ * 无界队列
+ * 内部维持一把锁，一个notEmpty条件,使用take方法时，队列为空会阻塞
+ * @Author: csx
+ * @Date: 2018/01/16
+ */
 public class UsePriorityBlockingQueue {
 
 	
