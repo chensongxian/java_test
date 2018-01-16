@@ -1,10 +1,7 @@
-package thread01.coll013;
+package thread01.concurrent;
 
-import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class UseConcurrentMap {
 
@@ -13,6 +10,10 @@ public class UseConcurrentMap {
 		chm.put("k1", "v1");
 		chm.put("k2", "v2");
 		chm.put("k3", "v3");
+		/*
+		 * puIfAbsent，不存在key值时才会put进去
+		 */
+		chm.putIfAbsent("k3","v33");
 		chm.putIfAbsent("k4", "vvvv");
 		//System.out.println(chm.get("k2"));
 		//System.out.println(chm.size());

@@ -1,9 +1,5 @@
-package thread01.coll013;
+package thread01.queue;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
 import java.util.concurrent.PriorityBlockingQueue;
 
 public class UsePriorityBlockingQueue {

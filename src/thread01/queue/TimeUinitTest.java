@@ -1,4 +1,4 @@
-package thread01.coll013;
+package thread01.queue;
 
 import java.util.concurrent.TimeUnit;
 
