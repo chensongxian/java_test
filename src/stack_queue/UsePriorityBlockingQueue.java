@@ -1,4 +1,6 @@
-package thread01.queue;
+package stack_queue;
+
+import thread01.queue.*;
 
 import java.util.concurrent.PriorityBlockingQueue;
 
@@ -8,15 +10,15 @@ public class UsePriorityBlockingQueue {
 	public static void main(String[] args) throws Exception{
 		
 		
-		PriorityBlockingQueue<Task> q = new PriorityBlockingQueue<Task>();
+		PriorityBlockingQueue<thread01.queue.Task> q = new PriorityBlockingQueue<thread01.queue.Task>();
 		
-		Task t1 = new Task();
+		thread01.queue.Task t1 = new thread01.queue.Task();
 		t1.setId(3);
 		t1.setName("id为3");
-		Task t2 = new Task();
+		thread01.queue.Task t2 = new thread01.queue.Task();
 		t2.setId(4);
 		t2.setName("id为4");
-		Task t3 = new Task();
+		thread01.queue.Task t3 = new thread01.queue.Task();
 		t3.setId(1);
 		t3.setName("id为1");
 		
@@ -27,6 +29,11 @@ public class UsePriorityBlockingQueue {
 		
 		// 1 3 4
 		System.out.println("容器：" + q);
+		System.out.println(q.take().getId());
+		System.out.println(q.take().getId());
+		System.out.println(q.take().getId());
+		System.out.println("------阻塞-----");
+		System.out.println(q.take().getId());
 		System.out.println(q.take().getId());
 		System.out.println("容器：" + q);
 //		System.out.println(q.take().getId());

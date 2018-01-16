@@ -1,4 +1,4 @@
-package stack;
+package stack_queue;
 
 import java.util.Deque;
 
@@ -6,12 +6,12 @@ import java.util.Deque;
  * Created with IntelliJ IDEA.
  *
  * @Description:
- * ArrayDeque,官方推荐用来替代stack
+ * UseArrayDeque(双端队列),官方推荐用来替代stack
  * ArrayDeque也可以当成队列使用
  * @Author: csx
  * @Date: 2018/01/16
  */
-public class ArrayDeque {
+public class UseArrayDeque {
     public static void main(String[] args) {
         System.out.println("---------栈-----------");
         Deque<Integer> stack=new java.util.ArrayDeque<>();
