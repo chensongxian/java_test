@@ -1,5 +1,6 @@
 package thread01.threadPool.ThreadPoolExecutor;
 
+import java.util.Timer;
 import java.util.concurrent.*;
 
 /**
@@ -11,17 +12,18 @@ import java.util.concurrent.*;
  */
 public class UserFixedThreadPool {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        ExecutorService executors = Executors.newSingleThreadExecutor();
+        ExecutorService executors = Executors.newFixedThreadPool(10);
 
-        for(int i = 0; i<100; i++){
-            final int finalI = i;
-            executors.execute(new Runnable() {
-                @Override
-                public void run() {
-                    System.out.println("测试一下:"+ finalI);
-                }
-            });
-        }
+
+        FutureTask<String> future=new FutureTask<String>(new Callable<String>() {
+            @Override
+            public String call() throws Exception {
+                return "返回结果";
+            }
+        });
+        executors.submit(future);
+        System.out.println(future.get());
+
 
     }
 }

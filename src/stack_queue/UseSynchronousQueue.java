@@ -13,7 +13,7 @@ import java.util.concurrent.SynchronousQueue;
  */
 public class UseSynchronousQueue {
     public static void main(String[] args) {
-        SynchronousQueue<Integer> synchronousQueue=new SynchronousQueue<>();
+        final SynchronousQueue<Integer> synchronousQueue=new SynchronousQueue<>();
 
         ExecutorService executor = Executors.newFixedThreadPool(10);
 

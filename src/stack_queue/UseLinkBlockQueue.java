@@ -16,7 +16,7 @@ import java.util.concurrent.*;
  */
 public class UseLinkBlockQueue {
     public static void main(String[] args) {
-        LinkedBlockingQueue<Integer> linkedBlockingQueue=new LinkedBlockingQueue<>(10);
+        final LinkedBlockingQueue<Integer> linkedBlockingQueue=new LinkedBlockingQueue<>(10);
 
         ExecutorService executor = Executors.newFixedThreadPool(10);
         executor.execute(new Runnable() {
